@@ -123,7 +123,10 @@
         <!-- ============================================================ -->
         <section class="hero" id="hero">
             <div class="hero__visual reveal">
-                <img src="assets/images/Home Page.png" alt="أعمال رقيم" width="1854" height="801" fetchpriority="high">
+                <picture>
+                    <source type="image/webp" srcset="assets/opt/site/hero-900.webp 900w, assets/opt/site/hero-1400.webp 1400w, assets/opt/site/hero-1854.webp 1854w" sizes="(max-width: 780px) 90vw, 60vw">
+                    <img src="assets/images/Home Page.png" alt="أعمال رقيم" width="1854" height="801" fetchpriority="high" decoding="async">
+                </picture>
             </div>
             <div class="hero__grid">
                 <h1 class="hero__title">
@@ -388,6 +391,7 @@
     <!-- ===== Scripts (deferred, non-blocking) ===== -->
     <script src="assets/js/vendor/lenis.min.js" defer></script>
     <script src="assets/js/portfolio-data.js" defer></script>
+    <script src="assets/js/portfolio-opt.js" defer></script>
     <script src="assets/js/main.js" defer></script>
 </body>
 </html>
