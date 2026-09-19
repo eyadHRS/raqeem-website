@@ -20,14 +20,14 @@
     <meta property="og:title" content="رقيم | وكالة تسويق رقمي في السعودية والإمارات">
     <meta property="og:description" content="شريكك الاستراتيجي في التسويق الرقمي: هوية بصرية، تصميم، مونتاج فيديو، واستراتيجية تسويق. نجعل علامتك تلمع في السعودية والإمارات.">
     <meta property="og:url" content="https://raqeem-agency.workers.dev/">
-    <meta property="og:image" content="https://raqeem-agency.workers.dev/assets/images/Logo.png">
+    <meta property="og:image" content="https://raqeem-agency.workers.dev/assets/images/%D9%84%D9%88%D8%AC%D9%88-03.png">
     <meta property="og:locale" content="ar_SA">
 
     <!-- ===== Twitter Card ===== -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="رقيم | وكالة تسويق رقمي في السعودية والإمارات">
     <meta name="twitter:description" content="شريكك الاستراتيجي في التسويق الرقمي: هوية بصرية، تصميم، مونتاج فيديو، واستراتيجية تسويق.">
-    <meta name="twitter:image" content="https://raqeem-agency.workers.dev/assets/images/Logo.png">
+    <meta name="twitter:image" content="https://raqeem-agency.workers.dev/assets/images/%D9%84%D9%88%D8%AC%D9%88-03.png">
 
     <!-- ===== Favicon ===== -->
     <link rel="icon" type="image/png" href="assets/icons/Icon.png">
@@ -39,11 +39,10 @@
 
     <!-- ===== Stylesheet ===== -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- No-JS fallback: reveal content without scripts -->
     <noscript>
         <style>
-            .preloader { display: none; }
-            .reveal { opacity: 1 !important; transform: none !important; }
+            .reveal, .line__i, .reveal-img { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+            .no-js-hide { display: none !important; }
         </style>
     </noscript>
 
@@ -54,7 +53,7 @@
         "@type": "Organization",
         "name": "رقيم | Raqeem",
         "url": "https://raqeem-agency.workers.dev/",
-        "logo": "https://raqeem-agency.workers.dev/assets/images/Logo.png",
+        "logo": "https://raqeem-agency.workers.dev/assets/images/%D9%84%D9%88%D8%AC%D9%88-01.png",
         "description": "وكالة تسويق رقمي متخصصة في الهوية البصرية، التصميم الجرافيكي، تصميم السوشيال ميديا، مونتاج الفيديو واستراتيجيات التسويق.",
         "email": "raqeem.agency@gmail.com",
         "telephone": "+201225842774",
@@ -66,8 +65,8 @@
         "sameAs": [
             "https://www.instagram.com/raqeem.agency/",
             "https://www.facebook.com/raqeem.agency",
-            "https://www.linkedin.com/company/raqeem-agency",
-            "https://x.com/RaqeemAgency1"
+            "http://www.tiktok.com/@raqeem.marketing.agency",
+            "https://www.linkedin.com/company/raqeem-agency"
         ],
         "areaServed": ["SA", "AE"]
     }
@@ -76,674 +75,133 @@
 
 <body>
 
-    <!-- ===== Preloader ===== -->
-    <div class="preloader" id="preloader" aria-hidden="true">
-        <div class="preloader__inner">
-            <div class="preloader__ring"></div>
-            <span class="preloader__logo">رقيم</span>
+    <!-- ===== Navigation ===== -->
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a class="nav__brand" href="#hero" aria-label="رقيم — الرئيسية">
+                <img src="assets/images/لوجو-03.png" alt="رقيم | Raqeem" width="164" height="40" fetchpriority="high">
+            </a>
+            <button class="nav__toggle" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuOverlay">
+                <span class="nav__toggle-txt nav__toggle-txt--open">القائمة</span>
+                <span class="nav__toggle-txt nav__toggle-txt--close">إغلاق</span>
+                <span class="nav__toggle-plus" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== Menu overlay ===== -->
+    <div class="menu" id="menuOverlay" role="dialog" aria-modal="true" aria-label="قائمة التنقل" aria-hidden="true">
+        <div class="menu__inner">
+            <nav class="menu__nav" aria-label="التنقل الرئيسي">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#hero"><span class="menu__num">01</span><span class="menu__text">الرئيسية</span></a></li>
+                    <li class="menu__item"><a class="menu__link" href="#work"><span class="menu__num">02</span><span class="menu__text">أعمالنا</span></a></li>
+                    <li class="menu__item"><a class="menu__link" href="#services"><span class="menu__num">03</span><span class="menu__text">خدماتنا</span></a></li>
+                    <li class="menu__item"><a class="menu__link" href="#about"><span class="menu__num">04</span><span class="menu__text">عن رقيم</span></a></li>
+                    <li class="menu__item"><a class="menu__link" href="#contact"><span class="menu__num">05</span><span class="menu__text">تواصل معنا</span></a></li>
+                </ul>
+            </nav>
+            <div class="menu__foot">
+                <div class="menu__contact">
+                    <a href="mailto:raqeem.agency@gmail.com">raqeem.agency@gmail.com</a>
+                    <a href="https://wa.me/201225842774" target="_blank" rel="noopener noreferrer">+20 122 584 2774</a>
+                </div>
+                <div class="menu__socials" aria-label="تابعنا على">
+                    <a href="https://www.instagram.com/raqeem.agency/" target="_blank" rel="noopener noreferrer" aria-label="انستغرام">Instagram</a>
+                    <a href="http://www.tiktok.com/@raqeem.marketing.agency" target="_blank" rel="noopener noreferrer" aria-label="تيك توك">TikTok</a>
+                    <a href="https://www.facebook.com/raqeem.agency" target="_blank" rel="noopener noreferrer" aria-label="فيسبوك">Facebook</a>
+                    <a href="https://www.linkedin.com/company/raqeem-agency" target="_blank" rel="noopener noreferrer" aria-label="لينكد إن">LinkedIn</a>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- ===== Scroll Progress Bar ===== -->
-    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-
-    <!-- ===== Custom Cursor ===== -->
-    <div class="cursor" id="cursor" aria-hidden="true"></div>
-    <div class="cursor-follow" id="cursorFollow" aria-hidden="true">
-        <span class="cursor-follow__label"></span>
-    </div>
-
-    <!-- ===== Header / Navbar ===== -->
-    <header class="site-header" id="siteHeader">
-        <nav class="navbar container" aria-label="التنقل الرئيسي">
-            <a href="#hero" class="navbar__brand" aria-label="رقيم - الرئيسية">
-                <img src="assets/images/Logo.png" alt="شعار رقيم" width="160" height="48" fetchpriority="high">
-            </a>
-
-            <ul class="navbar__menu" id="navMenu">
-                <li><a href="#hero" class="nav-link is-active">الرئيسية</a></li>
-                <li><a href="#about" class="nav-link">عن رقيم</a></li>
-                <li><a href="#services" class="nav-link">خدماتنا</a></li>
-                <li><a href="#why-us" class="nav-link">لماذا نحن</a></li>
-                <li><a href="#strategy" class="nav-link">استراتيجيتنا</a></li>
-                <li><a href="#process" class="nav-link">مراحل العمل</a></li>
-                <li><a href="#testimonials" class="nav-link">آراء العملاء</a></li>
-                <li><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
-            </ul>
-
-            <div class="navbar__actions">
-                <a href="https://wa.me/201225842774" class="btn btn--primary btn--sm navbar__cta" data-magnetic>تواصل معنا</a>
-                <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navMenu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <main>
+    <main id="main">
 
         <!-- ============================================================ -->
-        <!-- HERO                                                         -->
+        <!-- 01 HERO                                                      -->
         <!-- ============================================================ -->
-        <section class="hero" id="hero" aria-label="القسم الرئيسي">
-            <!-- Animated background blobs -->
-            <div class="hero__bg" aria-hidden="true">
-                <span class="hero__blob hero__blob--1"></span>
-                <span class="hero__blob hero__blob--2"></span>
-                <span class="hero__blob hero__blob--3"></span>
-                <span class="hero__grain"></span>
-                <span class="float-shape float-shape--ring" data-parallax="0.4"></span>
-                <span class="float-shape float-shape--dot" data-parallax="0.6"></span>
-                <span class="float-shape float-shape--cross" data-parallax="0.3"></span>
-                <span class="float-shape float-shape--ring-sm" data-parallax="0.5"></span>
-                <span class="float-shape float-shape--dot-sm" data-parallax="0.7"></span>
+        <section class="hero" id="hero">
+            <div class="hero__visual reveal">
+                <img src="assets/images/Home Page.png" alt="أعمال رقيم" width="1854" height="801" fetchpriority="high">
             </div>
-
-            <div class="container hero__content">
-                <p class="hero__eyebrow reveal" data-reveal="fade-up">
-                    <span class="scramble-text" id="scrambleText" aria-hidden="true">وكالة تسويق رقمي متخصصة</span>
-                    <span class="visually-hidden">وكالة تسويق رقمي متخصصة</span>
-                </p>
-                <h1 class="hero__title reveal" data-reveal="fade-up" data-delay="100">
-                    نحوّل علامتك التجارية<br>
-                    إلى <span class="text-gradient">حضور رقمي</span> لا يُنسى
+            <div class="hero__grid">
+                <h1 class="hero__title">
+                    <span class="line"><span class="line__i">نُصمّم الهوية</span></span>
+                    <span class="line"><span class="line__i">والمحتوى الذي يجعل</span></span>
+                    <span class="line"><span class="line__i">علامتك <em>تُرى</em> وتُتذكّر.</span></span>
                 </h1>
-                <p class="hero__lead reveal" data-reveal="fade-up" data-delay="200">
-                    رقيم شريكك الاستراتيجي في التسويق الرقمي؛ نصوغ هويتك، نصمم محتواك،
-                    ونبني استراتيجيات تحوّل الزوار إلى عملاء. إبداع يلمس التفاصيل، ونتائج تتحدث.
-                </p>
-                <div class="hero__cta reveal" data-reveal="fade-up" data-delay="300">
-                    <a href="https://wa.me/201225842774" class="btn btn--primary" data-magnetic data-cursor-label="ابدأ الآن">ابدأ مشروعك الآن</a>
-                    <a href="#services" class="btn btn--ghost" data-magnetic data-cursor-label="استكشف">استكشف خدماتنا</a>
-                </div>
-
-                <div class="hero__stats reveal" data-reveal="fade-up" data-delay="400">
-                    <div class="hero-stat">
-                        <div class="hero-stat__num">
-                            <span class="hero-stat__value" data-counter="120">0</span><span class="hero-stat__suffix">+</span>
-                        </div>
-                        <span class="hero-stat__label">مشروع ناجح</span>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat__num">
-                            <span class="hero-stat__value" data-counter="85">0</span><span class="hero-stat__suffix">+</span>
-                        </div>
-                        <span class="hero-stat__label">عميل واثق</span>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat__num">
-                            <span class="hero-stat__value" data-counter="98">0</span><span class="hero-stat__suffix">%</span>
-                        </div>
-                        <span class="hero-stat__label">نسبة رضا</span>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat__num">
-                            <span class="hero-stat__value" data-counter="5">0</span><span class="hero-stat__suffix">+</span>
-                        </div>
-                        <span class="hero-stat__label">سنوات خبرة</span>
+                <div class="hero__aside">
+                    <p class="hero__lead" data-bidi>نحوّل أهداف العلامة إلى اتجاه بصري مدروس؛ نفهم السوق والجمهور والمنافسين، ثم نبني الـArt Direction ونصمّم المحتوى الذي يجمع بين وضوح الرسالة، قوة الحضور، وجودة التنفيذ.</p>
+                    <div class="hero__actions">
+                        <a class="btn" href="https://wa.me/201225842774" target="_blank" rel="noopener noreferrer">ابدأ مشروعك</a>
+                        <a class="link-arrow" href="#work"><span>شاهد أعمالنا</span><span class="link-arrow__line" aria-hidden="true"></span></a>
                     </div>
                 </div>
             </div>
-
-            <a href="#about" class="hero__scroll" aria-label="مرّر للأسفل">
-                <span class="hero__mouse"></span>
-            </a>
         </section>
 
         <!-- ============================================================ -->
-        <!-- ABOUT                                                        -->
+        <!-- 02 SELECTED WORK                                             -->
         <!-- ============================================================ -->
-        <section class="section about" id="about" aria-labelledby="about-title">
-            <div class="container about__grid">
-                <div class="about__visual reveal" data-reveal="fade-left">
-                    <div class="about__card">
-                        <div class="about__badge">
-                            <span class="about__badge-icon" aria-hidden="true">✦</span>
-                            شريكك الإبداعي
-                        </div>
-                        <span class="about__letter" aria-hidden="true">ر</span>
-                        <div class="about__ring about__ring--1" aria-hidden="true"></div>
-                        <div class="about__ring about__ring--2" aria-hidden="true"></div>
-                        <p class="about__quote">"الإبداع ليس مجرد شكل جميل… بل استراتيجية تُبنى على فهم عميق لعلامتك."</p>
-                    </div>
+        <section class="work" id="work">
+            <header class="section-head">
+                <h2 class="section-statement">مختارات من أعمالنا.</h2>
+                <p class="section-note">كل تصنيف يمكن فتحه لاستعراض مجموعة كاملة من الأعمال.</p>
+            </header>
+            <div class="work-list" id="workList">
+                <noscript><p class="work-list__fallback">يجب تفعيل JavaScript لعرض الأعمال.</p></noscript>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 03 ABOUT                                                     -->
+        <!-- ============================================================ -->
+        <section class="about" id="about">
+            <div class="about__grid">
+                <p class="section-kicker">02 — عن رقيم</p>
+                <blockquote class="about__statement">
+                    <span class="line"><span class="line__i">نؤمن أن كل علامة</span></span>
+                    <span class="line"><span class="line__i">تحمل قصة تستحق</span></span>
+                    <span class="line"><span class="line__i">أن تُروى بوضوح.</span></span>
+                </blockquote>
+                <div class="about__body">
+                    <p>رقيم وكالة إبداعية تجمع بين التصميم والاستراتيجية. نعمل مع الأعمال والشركات في السعودية والإمارات لبناء حضور بصري متّسق يساعدها على الظهور بوضوح أمام جمهورها.</p>
+                    <p>نبدأ من فهم العلامة وجمهورها، ثم نصوغ الهوية والمحتوى والتصاميم التي تحمل رسالتها في كل نقطة تواصل.</p>
                 </div>
+            </div>
+        </section>
 
-                <div class="about__content">
-                    <p class="eyebrow reveal" data-reveal="fade-up">من نحن</p>
-                    <h2 class="section-title reveal" data-reveal="fade-up" data-delay="100" id="about-title">
-                        وكالة إبداعية تصنع <span class="text-gradient-dark">قيمة حقيقية</span> لعلامتك
-                    </h2>
-                    <p class="section-lead reveal" data-reveal="fade-up" data-delay="200">
-                        رقيم ليست مجرد وكالة تسويق رقمي؛ نحن فريق من المصممين والاستراتيجيين والمبدعين
-                        نؤمن أن كل علامة تحمل قصة تستحق أن تُروى بذكاء. نعمل مع الأعمال والشركات الناشئة
-                        والمتوسطة في السعودية والإمارات لنبني حضورًا رقميًا يليق بطموحاتهم.
-                    </p>
-
-                    <ul class="about__features">
-                        <li class="about__feature reveal" data-reveal="fade-up" data-delay="250">
-                            <span class="about__feature-icon" aria-hidden="true">◆</span>
-                            <div>
-                                <h3>إبداع مدروس</h3>
-                                <p>تصميم يبدأ من تحليل استراتيجي، لا من اتجاهات عابرة.</p>
-                            </div>
+        <!-- ============================================================ -->
+        <!-- 04 SERVICES                                                  -->
+        <!-- ============================================================ -->
+        <section class="services" id="services">
+            <div class="services__grid">
+                <p class="section-kicker">03 — خدماتنا</p>
+                <div class="services__main">
+                    <ul class="services__primary">
+                        <li class="service-item reveal">
+                            <span class="service-item__num">01</span>
+                            <span class="service-item__name">تصميم المحتوى والسوشيال ميديا</span>
+                            <span class="service-item__desc" data-bidi>نبني نظامًا بصريًا للمحتوى، لا مجموعة منشورات منفصلة. من الـArt Direction والـVisual Hierarchy إلى الصورة والـTypography؛ ليبقى حضور العلامة متّسقًا، واضحًا وقابلًا للتذكّر.</span>
                         </li>
-                        <li class="about__feature reveal" data-reveal="fade-up" data-delay="300">
-                            <span class="about__feature-icon" aria-hidden="true">◆</span>
-                            <div>
-                                <h3>نتائج قابلة للقياس</h3>
-                                <p>كل قرار تسويقي مبني على بيانات وواقع عملائك.</p>
-                            </div>
+                        <li class="service-item reveal">
+                            <span class="service-item__num">02</span>
+                            <span class="service-item__name">التصاميم الإعلانية والحملات الرقمية</span>
+                            <span class="service-item__desc" data-bidi>نحوّل الرسالة التسويقية إلى فكرة بصرية قادرة على لفت الانتباه وتوصيل المعنى. نختار الـConcept والتكوين والأسلوب وفق الجمهور والمنصة وهدف الحملة، لا وفق ما يبدو جميلًا فقط.</span>
                         </li>
-                        <li class="about__feature reveal" data-reveal="fade-up" data-delay="350">
-                            <span class="about__feature-icon" aria-hidden="true">◆</span>
-                            <div>
-                                <h3>شراكة طويلة الأمد</h3>
-                                <p>ننمو مع علامتك ونشاركك النجاح خطوة بخطوة.</p>
-                            </div>
+                        <li class="service-item reveal">
+                            <span class="service-item__num">03</span>
+                            <span class="service-item__name">تصميم المطبوعات</span>
+                            <span class="service-item__desc" data-bidi>ننقل الهوية من الشاشة إلى المطبوع مع عناية بالتفاصيل، الـGrid، التسلسل البصري والخامات ومتطلبات الإنتاج؛ ليبقى المنتج النهائي بنفس مستوى العلامة.</span>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================ -->
-        <!-- SERVICES                                                     -->
-        <!-- ============================================================ -->
-        <section class="section section--light services" id="services" aria-labelledby="services-title">
-            <div class="container">
-                <div class="section__head">
-                    <p class="eyebrow eyebrow--center reveal" data-reveal="fade-up">خدماتنا</p>
-                    <h2 class="section-title reveal" data-reveal="fade-up" data-delay="100" id="services-title">
-                        خدمات متكاملة تبنى عليها <span class="text-gradient-dark">علامتك</span>
-                    </h2>
-                    <p class="section-lead section-lead--center reveal" data-reveal="fade-up" data-delay="200">
-                        من الهوية إلى استراتيجيات النمو، نغطي رحلة علامتك الرقمية بالكامل تحت سقف واحد.
-                    </p>
-                </div>
-
-                <div class="services__grid">
-                    <!-- 01 Brand Identity -->
-                    <article class="service-card reveal" data-reveal="fade-up" data-delay="0">
-                        <span class="service-card__num" aria-hidden="true">01</span>
-                        <div class="service-card__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 3l2.4 1.8 3-.4 1 2.8 2.9 1.3-1 2.9 1 2.9-2.9 1.3-1 2.8-3-.4L12 21l-2.4-1.8-3 .4-1-2.8-2.9-1.3 1-2.9-1-2.9 2.9-1.3 1-2.8 3 .4z"/>
-                                <circle cx="12" cy="12" r="3"/>
-                            </svg>
-                        </div>
-                        <h3 class="service-card__title">الهوية البصرية</h3>
-                        <p class="service-card__text">نصوغ هوية متكاملة تعكس شخصية علامتك: الشعار، الألوان، والخطوط التي تترك انطباعًا لا يُنسى.</p>
-                    </article>
-
-                    <!-- 02 Graphic Design -->
-                    <article class="service-card reveal" data-reveal="fade-up" data-delay="100">
-                        <span class="service-card__num" aria-hidden="true">02</span>
-                        <div class="service-card__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
-                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
-                                <path d="M2 2l7.586 7.586"/>
-                                <circle cx="11" cy="11" r="2"/>
-                            </svg>
-                        </div>
-                        <h3 class="service-card__title">التصميم الجرافيكي</h3>
-                        <p class="service-card__text">تصاميم احترافية للمطبوعات والإعلانات والمنشورات، تروي قصتك بأسلوب بصري راقٍ ومتسق.</p>
-                    </article>
-
-                    <!-- 03 Social Media Design -->
-                    <article class="service-card reveal" data-reveal="fade-up" data-delay="200">
-                        <span class="service-card__num" aria-hidden="true">03</span>
-                        <div class="service-card__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="3" width="18" height="18" rx="2"/>
-                                <path d="M3 9h18"/>
-                                <path d="M3 15h18"/>
-                                <path d="M9 9v12"/>
-                            </svg>
-                        </div>
-                        <h3 class="service-card__title">تصميم السوشيال ميديا</h3>
-                        <p class="service-card__text">محتوى بصري جذاب ومتناسق لمنصات التواصل، يزيد التفاعل ويقوّي حضورك الرقمي يومًا بعد يوم.</p>
-                    </article>
-
-                    <!-- 04 Video Montage -->
-                    <article class="service-card reveal" data-reveal="fade-up" data-delay="0">
-                        <span class="service-card__num" aria-hidden="true">04</span>
-                        <div class="service-card__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="5" width="14" height="14" rx="2"/>
-                                <path d="M16 10l5-3v10l-5-3"/>
-                            </svg>
-                        </div>
-                        <h3 class="service-card__title">مونتاج الفيديو</h3>
-                        <p class="service-card__text">مونتاج احترافي يحوّل لقطاتك إلى قصص بصرية سينمائية تلتقط الانتباه وتنقل رسالتك بأقوى تأثير.</p>
-                    </article>
-
-                    <!-- 05 Marketing Strategy -->
-                    <article class="service-card reveal" data-reveal="fade-up" data-delay="100">
-                        <span class="service-card__num" aria-hidden="true">05</span>
-                        <div class="service-card__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M3 17l6-6 4 4 8-8"/>
-                                <path d="M17 7h4v4"/>
-                            </svg>
-                        </div>
-                        <h3 class="service-card__title">استراتيجية التسويق</h3>
-                        <p class="service-card__text">خطط تسويقية مبنية على التحليل والبيانات، تستهدف الجمهور الصحيح بالرسالة الصحيحة في التوقيت المناسب.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================ -->
-        <!-- WHY CHOOSE US                                                -->
-        <!-- ============================================================ -->
-        <section class="section section--dark why-us" id="why-us" aria-labelledby="why-title">
-            <div class="why-us__bg" aria-hidden="true">
-                <span class="hero__blob hero__blob--1"></span>
-                <span class="hero__blob hero__blob--2"></span>
-            </div>
-
-            <div class="container">
-                <div class="section__head">
-                    <p class="eyebrow eyebrow--light eyebrow--center reveal" data-reveal="fade-up">لماذا رقيم؟</p>
-                    <h2 class="section-title section-title--light reveal" data-reveal="fade-up" data-delay="100" id="why-title">
-                        اختر شريكًا يفهم أن <span class="text-gradient">النتيجة</span> هي الفرق
-                    </h2>
-                    <p class="section-lead section-lead--center section-lead--light reveal" data-reveal="fade-up" data-delay="200">
-                        نعامل علامتك كما لو كانت علامتنا: بعناية، بذكاء، وبالتزام كامل بالنتائج.
-                    </p>
-                </div>
-
-                <div class="why-us__grid">
-                    <article class="why-card reveal" data-reveal="fade-up" data-delay="0">
-                        <span class="why-card__icon" aria-hidden="true">⚑</span>
-                        <h3 class="why-card__title">فهم عميق لعلامتك</h3>
-                        <p class="why-card__text">نبدأ دائمًا بدراسة جمهورك ومنافسيك وهدفك الحقيقي، قبل أن نرسم أي فكرة.</p>
-                    </article>
-                    <article class="why-card reveal" data-reveal="fade-up" data-delay="100">
-                        <span class="why-card__icon" aria-hidden="true">◈</span>
-                        <h3 class="why-card__title">تصميم مدروس</h3>
-                        <p class="why-card__text">جمالية هادفة تقف خلفها استراتيجية واضحة، لا مجرد أشكال تُعجب بالصدفة.</p>
-                    </article>
-                    <article class="why-card reveal" data-reveal="fade-up" data-delay="200">
-                        <span class="why-card__icon" aria-hidden="true">◉</span>
-                        <h3 class="why-card__title">شفافية تامة</h3>
-                        <p class="why-card__text">تقارير واضحة وتواصل مباشر في كل مرحلة، تعرف دائمًا أين تقف علامتك.</p>
-                    </article>
-                    <article class="why-card reveal" data-reveal="fade-up" data-delay="300">
-                        <span class="why-card__icon" aria-hidden="true">✚</span>
-                        <h3 class="why-card__title">أداء قائم على البيانات</h3>
-                        <p class="why-card__text">كل خطوة نقيسها، وكل قياس نحسّنه. النتائج الحقيقية هي معيارنا الوحيد.</p>
-                    </article>
-                    <article class="why-card reveal" data-reveal="fade-up" data-delay="400">
-                        <span class="why-card__icon" aria-hidden="true">❖</span>
-                        <h3 class="why-card__title">التزام بالمواعيد</h3>
-                        <p class="why-card__text">نحترم وقتك ونلتزم بالجداول الزمنية المتفق عليها دون مساومة على الجودة.</p>
-                    </article>
-                    <article class="why-card reveal" data-reveal="fade-up" data-delay="500">
-                        <span class="why-card__icon" aria-hidden="true">♛</span>
-                        <h3 class="why-card__title">شراكة تتجاوز المشروع</h3>
-                        <p class="why-card__text">نبقى معك بعد التسليم، نراقب الأداء ونتطور مع نمو علامتك.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================ -->
-        <!-- WORK STRATEGY + WHY CLIENTS LOVE US                          -->
-        <!-- ============================================================ -->
-        <section class="section strategy" id="strategy" aria-labelledby="strategy-title">
-            <div class="container">
-                <div class="section__head">
-                    <p class="eyebrow eyebrow--center reveal" data-reveal="fade-up">استراتيجية عملنا</p>
-                    <h2 class="section-title reveal" data-reveal="fade-up" data-delay="100" id="strategy-title">
-                        لماذا يحب عملاؤنا <span class="text-gradient-dark">العمل معنا؟</span>
-                    </h2>
-                    <p class="section-lead section-lead--center reveal" data-reveal="fade-up" data-delay="200">
-                        لأننا ننظر إلى كل علامة على أنها استثمار طويل الأمد، لا مشروع مؤقت.
-                    </p>
-                </div>
-
-                <div class="strategy__grid">
-                    <article class="strategy-card reveal" data-reveal="fade-up" data-delay="0">
-                        <span class="strategy-card__step" aria-hidden="true">١</span>
-                        <h3 class="strategy-card__title">نستمع ثم نخطط</h3>
-                        <p class="strategy-card__text">نبدأ بجلسة استكشاف لفهم أهدافك وتحدياتك، لنرسم خارطة طريق مخصصة لعلامتك فقط.</p>
-                    </article>
-                    <article class="strategy-card reveal" data-reveal="fade-up" data-delay="100">
-                        <span class="strategy-card__step" aria-hidden="true">٢</span>
-                        <h3 class="strategy-card__title">نصمم بجرأة</h3>
-                        <p class="strategy-card__text">فريق إبداعي واحد يعمل بتناغم، من الفكرة الأولى إلى البكسل الأخير.</p>
-                    </article>
-                    <article class="strategy-card reveal" data-reveal="fade-up" data-delay="200">
-                        <span class="strategy-card__step" aria-hidden="true">٣</span>
-                        <h3 class="strategy-card__title">ننفذ بدقة</h3>
-                        <p class="strategy-card__text">الاهتمام بالتفاصيل هو ما يميز عملنا؛ كل عنصر في مكانه الصحيح ليخدم هدفك.</p>
-                    </article>
-                    <article class="strategy-card reveal" data-reveal="fade-up" data-delay="300">
-                        <span class="strategy-card__step" aria-hidden="true">٤</span>
-                        <h3 class="strategy-card__title">نقيس ونطور</h3>
-                        <p class="strategy-card__text">النتائج ليست صدفة؛ نتابع الأداء باستمرار ونحسّن استراتيجيتنا لتظل متفوقًا.</p>
-                    </article>
-                </div>
-
-                <div class="strategy__banner reveal" data-reveal="fade-up">
-                    <div class="strategy__banner-icon" aria-hidden="true">♡</div>
-                    <div class="strategy__banner-text">
-                        <h3>ثقة تُبنى بالنتائج، وعلاقات تستمر بالنجاح</h3>
-                        <p>أكثر من 85% من عملائنا يعودون إلينا في مشاريع جديدة، وأغلبهم يوصينا لأصحاب أعمالهم. هذا هو أصدق دليل على أننا نقدّم ما يستحق الثقة.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================ -->
-        <!-- PROCESS / TIMELINE                                           -->
-        <!-- ============================================================ -->
-        <section class="section section--light process" id="process" aria-labelledby="process-title">
-            <div class="container">
-                <div class="section__head">
-                    <p class="eyebrow eyebrow--center reveal" data-reveal="fade-up">مراحل العمل</p>
-                    <h2 class="section-title reveal" data-reveal="fade-up" data-delay="100" id="process-title">
-                        رحلة واضحة من <span class="text-gradient-dark">الفكرة</span> إلى النتيجة
-                    </h2>
-                </div>
-
-                <ol class="timeline">
-                    <li class="timeline__item reveal" data-reveal="fade-right">
-                        <span class="timeline__dot" aria-hidden="true"></span>
-                        <div class="timeline__card">
-                            <span class="timeline__step" aria-hidden="true">01</span>
-                            <h3 class="timeline__title">الاكتشاف</h3>
-                            <p class="timeline__text">نلتقي بك، نفهم أهدافك وجمهورك ومنافسيك لنحدد معًا صورة النجاح.</p>
-                        </div>
-                    </li>
-                    <li class="timeline__item reveal" data-reveal="fade-right">
-                        <span class="timeline__dot" aria-hidden="true"></span>
-                        <div class="timeline__card">
-                            <span class="timeline__step" aria-hidden="true">02</span>
-                            <h3 class="timeline__title">الاستراتيجية</h3>
-                            <p class="timeline__text">نحوّل الرؤية إلى خطة تنفيذية واضحة الأهداف، معايير القياس، والجدول الزمني.</p>
-                        </div>
-                    </li>
-                    <li class="timeline__item reveal" data-reveal="fade-right">
-                        <span class="timeline__dot" aria-hidden="true"></span>
-                        <div class="timeline__card">
-                            <span class="timeline__step" aria-hidden="true">03</span>
-                            <h3 class="timeline__title">التصميم والإبداع</h3>
-                            <p class="timeline__text">تنفيذ الإبداع باحترافية: هوية، محتوى، وتصاميم تتماشى مع استراتيجيتك بدقة.</p>
-                        </div>
-                    </li>
-                    <li class="timeline__item reveal" data-reveal="fade-right">
-                        <span class="timeline__dot" aria-hidden="true"></span>
-                        <div class="timeline__card">
-                            <span class="timeline__step" aria-hidden="true">04</span>
-                            <h3 class="timeline__title">الإطلاق</h3>
-                            <p class="timeline__text">إطلاق المشروع عبر القنوات الصحيحة مع مراقبة دقيقة للأداء منذ اللحظة الأولى.</p>
-                        </div>
-                    </li>
-                    <li class="timeline__item reveal" data-reveal="fade-right">
-                        <span class="timeline__dot" aria-hidden="true"></span>
-                        <div class="timeline__card">
-                            <span class="timeline__step" aria-hidden="true">05</span>
-                            <h3 class="timeline__title">النمو والتحسين</h3>
-                            <p class="timeline__text">نواصل العمل على تطوير استراتيجيتك بناءً على النتائج لنضمن نموًا مستدامًا.</p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-        </section>
-
-        <!-- ============================================================ -->
-        <!-- TESTIMONIALS                                                 -->
-        <!-- ============================================================ -->
-        <section class="section section--dark testimonials" id="testimonials" aria-labelledby="testimonials-title">
-            <div class="testimonials__bg" aria-hidden="true">
-                <span class="hero__blob hero__blob--3"></span>
-            </div>
-
-            <div class="container">
-                <div class="section__head">
-                    <p class="eyebrow eyebrow--light eyebrow--center reveal" data-reveal="fade-up">آراء عملائنا</p>
-                    <h2 class="section-title section-title--light reveal" data-reveal="fade-up" data-delay="100" id="testimonials-title">
-                        كلمات تروي <span class="text-gradient">تجربتهم</span> معنا
-                    </h2>
-                </div>
-
-                <div class="testimonials__marquee reveal" data-reveal="fade-up" data-delay="200">
-                    <!-- Column 1 -->
-                    <div class="testimonials__col">
-                        <ul class="testimonials__track testimonials__track--a">
-                            <li class="testimonial-card">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">عملت مع فريق رقيم على هوية علامتي كاملة، وكانت التجربة استثنائية من الفهم العميق إلى التنفيذ الدقيق. حصلت على حضور رقمي يشبه تمامًا ما تمنيته.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">خ</span>
-                                    <div>
-                                        <strong>خالد العتيبي</strong>
-                                        <span>مؤسس علامة تجارية — الرياض</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">استراتيجيتهم لمحتوى السوشيال ميديا رفعت تفاعلنا بشكل ملحوظ خلال أشهر قليلة. فريق يفهم السوق المحلي ويعرف كيف يصل لجمهوره.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">س</span>
-                                    <div>
-                                        <strong>سارة المنصوري</strong>
-                                        <span>مديرة تسويق — دبي</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">التزام بالمواعيد وجودة في التفاصيل؛ لم أتعامل مع فريق بهذا المستوى من الاحترافية في تسليم الأعمال.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">م</span>
-                                    <div>
-                                        <strong>ماجد الشهري</strong>
-                                        <span>مدير تسويق — جدة</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">تصميم منشورات السوشيال ميديا أصبح متسقًا واحترافيًا بشكل لفت انتباه متابعينا، والتفاعل تضاعف بشكل واضح.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">ر</span>
-                                    <div>
-                                        <strong>ريم السبيعي</strong>
-                                        <span>مؤسسة مشروع — الرياض</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">فريق يمتلك ذوقًا رفيعًا وفهمًا عميقًا لسوقنا. كل اقتراح كان مدروسًا ويخدم هدفنا الحقيقي، لا مجرد شعارات.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">ف</span>
-                                    <div>
-                                        <strong>فيصل الدوسري</strong>
-                                        <span>رائد أعمال — الدمام</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- duplicated set for seamless loop -->
-                            <li class="testimonial-card" aria-hidden="true">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">عملت مع فريق رقيم على هوية علامتي كاملة، وكانت التجربة استثنائية من الفهم العميق إلى التنفيذ الدقيق. حصلت على حضور رقمي يشبه تمامًا ما تمنيته.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">خ</span>
-                                    <div>
-                                        <strong>خالد العتيبي</strong>
-                                        <span>مؤسس علامة تجارية — الرياض</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card" aria-hidden="true">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">استراتيجيتهم لمحتوى السوشيال ميديا رفعت تفاعلنا بشكل ملحوظ خلال أشهر قليلة. فريق يفهم السوق المحلي ويعرف كيف يصل لجمهوره.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">س</span>
-                                    <div>
-                                        <strong>سارة المنصوري</strong>
-                                        <span>مديرة تسويق — دبي</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card" aria-hidden="true">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">التزام بالمواعيد وجودة في التفاصيل؛ لم أتعامل مع فريق بهذا المستوى من الاحترافية في تسليم الأعمال.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">م</span>
-                                    <div>
-                                        <strong>ماجد الشهري</strong>
-                                        <span>مدير تسويق — جدة</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card" aria-hidden="true">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">تصميم منشورات السوشيال ميديا أصبح متسقًا واحترافيًا بشكل لفت انتباه متابعينا، والتفاعل تضاعف بشكل واضح.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">ر</span>
-                                    <div>
-                                        <strong>ريم السبيعي</strong>
-                                        <span>مؤسسة مشروع — الرياض</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card" aria-hidden="true">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">فريق يمتلك ذوقًا رفيعًا وفهمًا عميقًا لسوقنا. كل اقتراح كان مدروسًا ويخدم هدفنا الحقيقي، لا مجرد شعارات.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">ف</span>
-                                    <div>
-                                        <strong>فيصل الدوسري</strong>
-                                        <span>رائد أعمال — الدمام</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Column 2 (offset for variety) -->
-                    <div class="testimonials__col testimonials__col--reverse">
-                        <ul class="testimonials__track testimonials__track--b">
-                            <li class="testimonial-card">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">صمم لنا فريق رقيم موقعًا إلكترونيًا جمع بين الجمال وسرعة الأداء. معدل التحويل ارتفع فورًا، والعملاء دائمًا يثنون على التصميم.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">م</span>
-                                    <div>
-                                        <strong>محمد الحربي</strong>
-                                        <span>صاحب مشروع تجاري — جدة</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">أكثر ما يميز رقيم هو الالتزام والشفافية. تقارير واضحة، مواعيد محترمة، ونتائج ملموسة على أرض الواقع. أنصح بهم كل صاحب عمل.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">ن</span>
-                                    <div>
-                                        <strong>نورة القحطاني</strong>
-                                        <span>رائدة أعمال — الخبر</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">شركاء حقيقيون يشاركونك النجاح، يتواصلون معك بصدق ويعملون معك لا لصالحك فقط. تجربة تستحق الثقة الكاملة.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">ع</span>
-                                    <div>
-                                        <strong>عبدالله العمري</strong>
-                                        <span>مستثمر — الرياض</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">مونتاج الفيديو الذي قدموه غيّر طريقة عرضنا لخدماتنا؛ أصبح المحتوى أرقى وأقرب إلى قلوب عملائنا.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">ل</span>
-                                    <div>
-                                        <strong>لمى حسن</strong>
-                                        <span>مديرة علامة تجارية — دبي</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">من أول جلسة عمل شعرت أنني أمام فريق محترف يفهم التحديات الحقيقية لأصحاب الأعمال، ويقدم حلولًا عملية لا شعارات.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">ي</span>
-                                    <div>
-                                        <strong>ياسر المطيري</strong>
-                                        <span>صاحب شركة — الكويت</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- duplicated set for seamless loop -->
-                            <li class="testimonial-card" aria-hidden="true">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">صمم لنا فريق رقيم موقعًا إلكترونيًا جمع بين الجمال وسرعة الأداء. معدل التحويل ارتفع فورًا، والعملاء دائمًا يثنون على التصميم.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">م</span>
-                                    <div>
-                                        <strong>محمد الحربي</strong>
-                                        <span>صاحب مشروع تجاري — جدة</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card" aria-hidden="true">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">أكثر ما يميز رقيم هو الالتزام والشفافية. تقارير واضحة، مواعيد محترمة، ونتائج ملموسة على أرض الواقع. أنصح بهم كل صاحب عمل.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">ن</span>
-                                    <div>
-                                        <strong>نورة القحطاني</strong>
-                                        <span>رائدة أعمال — الخبر</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card" aria-hidden="true">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">شركاء حقيقيون يشاركونك النجاح، يتواصلون معك بصدق ويعملون معك لا لصالحك فقط. تجربة تستحق الثقة الكاملة.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">ع</span>
-                                    <div>
-                                        <strong>عبدالله العمري</strong>
-                                        <span>مستثمر — الرياض</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card" aria-hidden="true">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">مونتاج الفيديو الذي قدموه غيّر طريقة عرضنا لخدماتنا؛ أصبح المحتوى أرقى وأقرب إلى قلوب عملائنا.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">ل</span>
-                                    <div>
-                                        <strong>لمى حسن</strong>
-                                        <span>مديرة علامة تجارية — دبي</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="testimonial-card" aria-hidden="true">
-                                <div class="testimonial-card__quote" aria-hidden="true">”</div>
-                                <p class="testimonial-card__text">من أول جلسة عمل شعرت أنني أمام فريق محترف يفهم التحديات الحقيقية لأصحاب الأعمال، ويقدم حلولًا عملية لا شعارات.</p>
-                                <div class="testimonial-card__author">
-                                    <span class="testimonial-card__avatar" aria-hidden="true">ي</span>
-                                    <div>
-                                        <strong>ياسر المطيري</strong>
-                                        <span>صاحب شركة — الكويت</span>
-                                    </div>
-                                </div>
-                            </li>
+                    <div class="services__secondary">
+                        <p class="services__secondary-label">قدرات إضافية</p>
+                        <ul>
+                            <li>إدارة صفحات التواصل</li>
+                            <li>الهوية البصرية</li>
+                            <li>المونتاج</li>
                         </ul>
                     </div>
                 </div>
@@ -751,238 +209,185 @@
         </section>
 
         <!-- ============================================================ -->
-        <!-- FAQ                                                          -->
+        <!-- 04b PHILOSOPHY                                               -->
         <!-- ============================================================ -->
-        <section class="section faq" id="faq" aria-labelledby="faq-title">
-            <div class="container faq__grid">
-                <div class="faq__intro">
-                    <p class="eyebrow reveal" data-reveal="fade-up">الأسئلة الشائعة</p>
-                    <h2 class="section-title reveal" data-reveal="fade-up" data-delay="100" id="faq-title">
-                        إجابات لكل <span class="text-gradient-dark">أسئلتك</span>
-                    </h2>
-                    <p class="section-lead reveal" data-reveal="fade-up" data-delay="200">
-                        لم تجد سؤالك؟ تواصل معنا مباشرة وسنكون سعداء بمساعدتك.
-                    </p>
-                    <a href="https://wa.me/201225842774" class="btn btn--primary reveal" data-reveal="fade-up" data-delay="300" data-magnetic>اسألنا مباشرة</a>
-                </div>
+        <section class="philosophy" id="philosophy">
+            <div class="philosophy__inner">
+                <p class="section-kicker">فلسفتنا</p>
+                <h2 class="philosophy__statement">الجمال وحده لا يكفي.</h2>
+                <p class="philosophy__body">كل قرار بصري يجب أن يكون له سبب: من اختيار الصورة والخط والتكوين، إلى الأسلوب الذي تظهر به العلامة. ندرس المشروع وسوقه وجمهوره ومنافسيه، ثم نختار الاتجاه الذي يخدم الهدف ويمنح المنتج النهائي قيمته.</p>
+            </div>
+        </section>
 
-                <div class="accordion" id="accordion">
-                    <div class="accordion__item reveal" data-reveal="fade-up" data-delay="0">
-                        <h3 class="accordion__header">
-                            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-1">
-                                ما هي الخدمات التي تقدمها رقيم؟
-                                <span class="accordion__icon" aria-hidden="true"></span>
-                            </button>
-                        </h3>
-                        <div class="accordion__panel" id="faq-panel-1" role="region">
-                            <p>نقدم حلولًا تسويقية رقمية متكاملة تشمل الهوية البصرية، التصميم الجرافيكي، تصميم السوشيال ميديا، مونتاج الفيديو، واستراتيجية التسويق.</p>
-                        </div>
-                    </div>
-                    <div class="accordion__item reveal" data-reveal="fade-up" data-delay="100">
-                        <h3 class="accordion__header">
-                            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-2">
-                                كيف أبدأ مشروعي مع رقيم؟
-                                <span class="accordion__icon" aria-hidden="true"></span>
-                            </button>
-                        </h3>
-                        <div class="accordion__panel" id="faq-panel-2" role="region">
-                            <p>يمكنك التواصل معنا عبر واتساب أو بريدنا الإلكتروني، وسنحدد موعدًا لجلسة استكشاف مجانية نفهم فيها أهدافك، ثم نرسل لك خطة وعرضًا مخصصًا خلال أيام.</p>
-                        </div>
-                    </div>
-                    <div class="accordion__item reveal" data-reveal="fade-up" data-delay="200">
-                        <h3 class="accordion__header">
-                            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-3">
-                                كم يستغرق تنفيذ المشروع؟
-                                <span class="accordion__icon" aria-hidden="true"></span>
-                            </button>
-                        </h3>
-                        <div class="accordion__panel" id="faq-panel-3" role="region">
-                            <p>تعتمد المدة على حجم المشروع ونطاقه. نحدد لك دائمًا جدولًا زمنيًا واضحًا قبل البدء، ونلتزم به بدقة مع تحديث مستمر في كل مرحلة.</p>
-                        </div>
-                    </div>
-                    <div class="accordion__item reveal" data-reveal="fade-up" data-delay="300">
-                        <h3 class="accordion__header">
-                            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-4">
-                                هل تعملون مع عملاء خارج السعودية والإمارات؟
-                                <span class="accordion__icon" aria-hidden="true"></span>
-                            </button>
-                        </h3>
-                        <div class="accordion__panel" id="faq-panel-4" role="region">
-                            <p>نعم، نعمل عن بُعد مع عملاء من جميع أنحاء العالم العربي والخليج، مع تركيزنا الأساسي على الأسواق السعودية والإماراتية وخبرتنا العميقة بها.</p>
-                        </div>
-                    </div>
-                    <div class="accordion__item reveal" data-reveal="fade-up" data-delay="400">
-                        <h3 class="accordion__header">
-                            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-5">
-                                كيف تتعاملون مع قياس النتائج؟
-                                <span class="accordion__icon" aria-hidden="true"></span>
-                            </button>
-                        </h3>
-                        <div class="accordion__panel" id="faq-panel-5" role="region">
-                            <p>نقدم تقارير دورية شفافة توضح مؤشرات الأداء الأساسية: الوصول، التفاعل، التحويل، ونمو المتابعين. نناقش معك النتائج ونقترح خطوات التحسين باستمرار.</p>
-                        </div>
-                    </div>
-                    <div class="accordion__item reveal" data-reveal="fade-up" data-delay="500">
-                        <h3 class="accordion__header">
-                            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-panel-6">
-                                هل تقدمون باقات مخصصة؟
-                                <span class="accordion__icon" aria-hidden="true"></span>
-                            </button>
-                        </h3>
-                        <div class="accordion__panel" id="faq-panel-6" role="region">
-                            <p>بالتأكيد. كل علامة لها احتياجاتها الخاصة، لذلك نصمم باقات مرنة تناسب ميزانيتك وأهدافك، مع خيار التوسع مستقبلًا دون تعقيدات.</p>
-                        </div>
+        <!-- ============================================================ -->
+        <!-- 05 PROCESS                                                   -->
+        <!-- ============================================================ -->
+        <section class="process" id="process">
+            <div class="process__pin">
+                <header class="process__head">
+                    <p class="section-kicker">طريقة العمل</p>
+                    <h2 class="section-statement">من الفكرة إلى النتيجة.</h2>
+                </header>
+                <div class="process__rail" id="processRail" aria-hidden="true">
+                    <span class="process__rail-track"></span>
+                    <span class="process__rail-fill"></span>
+                    <span class="process__rail-marker"></span>
+                    <span class="process__rail-ticks" id="processRailTicks"></span>
+                </div>
+                <div class="process__viewport">
+                    <div class="process__world" id="processWorld">
+                        <svg class="roadmap roadmap--desktop" viewBox="0 0 100 480" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                            <defs>
+                                <clipPath id="roadClipDesktop">
+                                    <rect id="roadClipRectDesktop" x="-20" y="-20" width="140" height="2000"></rect>
+                                </clipPath>
+                            </defs>
+                            <path class="roadmap__progress" id="roadmapProgress" clip-path="url(#roadClipDesktop)" d="M 70 40 C 66 80 30 110 24 150 C 20 190 70 220 72 260 C 74 300 30 330 26 370 C 22 410 64 440 66 470"/>
+                        </svg>
+                        <svg class="roadmap roadmap--mobile" viewBox="0 0 40 1000" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                            <defs>
+                                <clipPath id="roadClipMobile">
+                                    <rect id="roadClipRectMobile" x="-10" y="-20" width="60" height="2000"></rect>
+                                </clipPath>
+                            </defs>
+                            <path class="roadmap__progress" id="roadmapProgressMobile" clip-path="url(#roadClipMobile)" d="M 20 0 C 6 160 34 300 20 460 C 6 620 34 760 20 920 L 20 1000"/>
+                        </svg>
+                        <div class="roadmap__dots roadmap__dots--desktop" id="roadmapDotsDesktop" aria-hidden="true"></div>
+                        <div class="roadmap__dots roadmap__dots--mobile" id="roadmapDotsMobile" aria-hidden="true"></div>
+                        <ol class="process__stages" id="processStages">
+                            <li class="pstage" data-index="0">
+                                <span class="pstage__num">01</span>
+                                <div class="pstage__body">
+                                    <h3 class="pstage__title">الاكتشاف</h3>
+                                    <p class="pstage__desc" data-bidi>نبدأ بفهم المشروع من الداخل: أهدافه، جمهوره، سوقه والمنافسين؛ لنحدد أين يقف وأين يجب أن يتجه.</p>
+                                    <figure class="pstage__art" data-art="0"></figure>
+                                </div>
+                            </li>
+                            <li class="pstage" data-index="1">
+                                <span class="pstage__num">02</span>
+                                <div class="pstage__body">
+                                    <h3 class="pstage__title">الاستراتيجية</h3>
+                                    <p class="pstage__desc" data-bidi>نحوّل ما تعلّمناه إلى اتجاه واضح؛ نحدد الرسالة، الأولويات، الـPositioning والمسار البصري الأنسب للمشروع.</p>
+                                    <figure class="pstage__art" data-art="1"></figure>
+                                </div>
+                            </li>
+                            <li class="pstage" data-index="2">
+                                <span class="pstage__num">03</span>
+                                <div class="pstage__body">
+                                    <h3 class="pstage__title">التصميم والإبداع</h3>
+                                    <p class="pstage__desc" data-bidi>هنا تتكوّن اللغة البصرية. نبني الـArt Direction، ونضبط الـVisual Hierarchy والـTypography والصورة والتكوين؛ ليعمل كل عنصر لخدمة الفكرة، لا لمجرد تجميلها.</p>
+                                    <figure class="pstage__art" data-art="2"></figure>
+                                </div>
+                            </li>
+                            <li class="pstage" data-index="3">
+                                <span class="pstage__num">04</span>
+                                <div class="pstage__body">
+                                    <h3 class="pstage__title">الإطلاق</h3>
+                                    <p class="pstage__desc">نجهّز العمل بصورته النهائية ونكيّفه مع القنوات المناسبة، مع الحفاظ على الاتساق والجودة في كل نقطة ظهور.</p>
+                                    <figure class="pstage__art" data-art="3"></figure>
+                                </div>
+                            </li>
+                            <li class="pstage" data-index="4">
+                                <span class="pstage__num">05</span>
+                                <div class="pstage__body">
+                                    <h3 class="pstage__title">النمو والتحسين</h3>
+                                    <p class="pstage__desc">الإطلاق ليس النهاية. نقرأ النتائج، نراجع ما يعمل فعليًا، ونطوّر الاتجاه والمحتوى بناءً على الأداء.</p>
+                                    <figure class="pstage__art" data-art="4"></figure>
+                                </div>
+                            </li>
+                        </ol>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ============================================================ -->
-        <!-- CONTACT                                                      -->
+        <!-- 07 CTA                                                       -->
         <!-- ============================================================ -->
-        <section class="section section--dark contact" id="contact" aria-labelledby="contact-title">
-            <div class="contact__bg" aria-hidden="true">
-                <span class="hero__blob hero__blob--2"></span>
-            </div>
-
-            <div class="container contact__inner">
-                <p class="eyebrow eyebrow--light eyebrow--center reveal" data-reveal="fade-up">تواصل معنا</p>
-                <h2 class="section-title section-title--light reveal" data-reveal="fade-up" data-delay="100" id="contact-title">
-                    جاهزون لنبدأ <span class="text-gradient">قصتك</span> معًا
-                </h2>
-                <p class="section-lead section-lead--center section-lead--light reveal" data-reveal="fade-up" data-delay="200">
-                    تواصل معنا عبر أي قناة تناسبك، وسنرد عليك في أقرب وقت.
-                </p>
-
-                <ul class="contact__socials" aria-label="روابط التواصل الاجتماعي">
-                    <li class="contact-item reveal" data-reveal="fade-up" data-delay="0">
-                        <a href="https://www.instagram.com/raqeem.agency/" target="_blank" rel="noopener noreferrer" class="contact-item__link contact-item__link--instagram" data-magnetic>
-                            <span class="contact-item__icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
-                            </span>
-                            <span>انستغرام</span>
-                        </a>
-                    </li>
-                    <li class="contact-item reveal" data-reveal="fade-up" data-delay="100">
-                        <a href="https://www.linkedin.com/company/raqeem-agency" target="_blank" rel="noopener noreferrer" class="contact-item__link contact-item__link--linkedin" data-magnetic>
-                            <span class="contact-item__icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v2a6 6 0 0 1 2-2z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                            </span>
-                            <span>لينكد إن</span>
-                        </a>
-                    </li>
-                    <li class="contact-item reveal" data-reveal="fade-up" data-delay="200">
-                        <a href="https://www.facebook.com/raqeem.agency" target="_blank" rel="noopener noreferrer" class="contact-item__link contact-item__link--facebook" data-magnetic>
-                            <span class="contact-item__icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                            </span>
-                            <span>فيسبوك</span>
-                        </a>
-                    </li>
-                    <li class="contact-item reveal" data-reveal="fade-up" data-delay="300">
-                        <a href="https://x.com/RaqeemAgency1" target="_blank" rel="noopener noreferrer" class="contact-item__link contact-item__link--x" data-magnetic>
-                            <span class="contact-item__icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16"/><path d="M20 4L4 20"/></svg>
-                            </span>
-                            <span>إكس</span>
-                        </a>
-                    </li>
-                    <li class="contact-item reveal" data-reveal="fade-up" data-delay="400">
-                        <a href="https://wa.me/201225842774" target="_blank" rel="noopener noreferrer" class="contact-item__link contact-item__link--whatsapp" data-magnetic>
-                            <span class="contact-item__icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
-                            </span>
-                            <span>واتساب</span>
-                        </a>
-                    </li>
-                    <li class="contact-item reveal" data-reveal="fade-up" data-delay="500">
-                        <a href="mailto:raqeem.agency@gmail.com" class="contact-item__link contact-item__link--email" data-magnetic>
-                            <span class="contact-item__icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M22 7l-10 6L2 7"/></svg>
-                            </span>
-                            <span>البريد الإلكتروني</span>
-                        </a>
-                    </li>
-                </ul>
+        <section class="cta" id="contact">
+            <div class="cta__inner">
+                <p class="cta__kicker">06 — تواصل</p>
+                <h2 class="cta__title">لنبدأ العمل على مشروعك.</h2>
+                <div class="cta__actions">
+                    <a class="btn btn--light" href="https://wa.me/201225842774" target="_blank" rel="noopener noreferrer">راسلنا على واتساب</a>
+                    <a class="cta__email" href="mailto:raqeem.agency@gmail.com">raqeem.agency@gmail.com</a>
+                </div>
             </div>
         </section>
+
     </main>
 
     <!-- ============================================================ -->
-    <!-- FOOTER                                                       -->
+    <!-- 08 FOOTER                                                    -->
     <!-- ============================================================ -->
     <footer class="footer">
-        <div class="container footer__grid">
+        <div class="footer__top">
             <div class="footer__brand">
-                <img src="assets/images/Logo.png" alt="شعار رقيم" width="140" height="42" loading="lazy">
-                <p>وكالة تسويق رقمي سعودية متخصصة في بناء حضور رقمي فاخر ومؤثر للعلامات الطموحة في السعودية والإمارات.</p>
+                <img src="assets/images/لوجو-01.png" alt="رقيم | Raqeem" width="200" height="150" loading="lazy">
+                <p>وكالة تسويق رقمي سعودية متخصصة في بناء حضور بصري فاخر ومؤثر للعلامات الطموحة في السعودية والإمارات.</p>
             </div>
-
             <nav class="footer__col" aria-label="روابط سريعة">
                 <h3 class="footer__title">روابط سريعة</h3>
                 <ul>
-                    <li><a href="#about">عن رقيم</a></li>
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#work">أعمالنا</a></li>
                     <li><a href="#services">خدماتنا</a></li>
-                    <li><a href="#why-us">لماذا نحن</a></li>
-                    <li><a href="#strategy">استراتيجيتنا</a></li>
-                    <li><a href="#process">مراحل العمل</a></li>
-                    <li><a href="#faq">الأسئلة الشائعة</a></li>
+                    <li><a href="#about">عن رقيم</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
                 </ul>
             </nav>
-
             <nav class="footer__col" aria-label="خدماتنا">
                 <h3 class="footer__title">خدماتنا</h3>
                 <ul>
-                    <li><a href="#services">الهوية البصرية</a></li>
-                    <li><a href="#services">التصميم الجرافيكي</a></li>
                     <li><a href="#services">تصميم السوشيال ميديا</a></li>
-                    <li><a href="#services">مونتاج الفيديو</a></li>
-                    <li><a href="#services">استراتيجية التسويق</a></li>
+                    <li><a href="#services">تصميم المطبوعات</a></li>
+                    <li><a href="#services">التصاميم الإعلانية والحملات</a></li>
+                    <li><a href="#services">الهوية البصرية</a></li>
+                    <li><a href="#services">المونتاج</a></li>
                 </ul>
             </nav>
-
             <div class="footer__col">
-                <h3 class="footer__title">تواصل معنا</h3>
+                <h3 class="footer__title">تواصل</h3>
                 <ul class="footer__contact">
-                    <li>
-                        <a href="mailto:raqeem.agency@gmail.com">raqeem.agency@gmail.com</a>
-                    </li>
-                    <li>
-                        <a href="https://wa.me/201225842774" target="_blank" rel="noopener noreferrer">+20 122 584 2774</a>
-                    </li>
+                    <li><a href="mailto:raqeem.agency@gmail.com">raqeem.agency@gmail.com</a></li>
+                    <li><a class="footer__phone" href="https://wa.me/201225842774" target="_blank" rel="noopener noreferrer">+20 122 584 2774</a></li>
                 </ul>
                 <div class="footer__socials" aria-label="تابعنا على">
-                    <a href="https://www.instagram.com/raqeem.agency/" target="_blank" rel="noopener noreferrer" aria-label="انستغرام">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/company/raqeem-agency" target="_blank" rel="noopener noreferrer" aria-label="لينكد إن">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v2a6 6 0 0 1 2-2z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                    </a>
-                    <a href="https://www.facebook.com/raqeem.agency" target="_blank" rel="noopener noreferrer" aria-label="فيسبوك">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                    </a>
-                    <a href="https://x.com/RaqeemAgency1" target="_blank" rel="noopener noreferrer" aria-label="إكس">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16"/><path d="M20 4L4 20"/></svg>
-                    </a>
-                    <a href="https://wa.me/201225842774" target="_blank" rel="noopener noreferrer" aria-label="واتساب">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
-                    </a>
+                    <a href="https://www.instagram.com/raqeem.agency/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="http://www.tiktok.com/@raqeem.marketing.agency" target="_blank" rel="noopener noreferrer">TikTok</a>
+                    <a href="https://www.facebook.com/raqeem.agency" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.linkedin.com/company/raqeem-agency" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
             </div>
         </div>
-
-        <div class="container footer__bottom">
+        <div class="footer__bottom">
             <p>© <span id="year">2026</span> رقيم | Raqeem — جميع الحقوق محفوظة.</p>
             <p>صُنع بشغف في السعودية والإمارات</p>
         </div>
     </footer>
 
-    <!-- ===== Back To Top ===== -->
-    <button class="back-to-top" id="backToTop" aria-label="العودة إلى الأعلى">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
-    </button>
+    <!-- ============================================================ -->
+    <!-- PROJECT VIEW                                                 -->
+    <!-- ============================================================ -->
+    <div class="project" id="project" role="dialog" aria-modal="true" aria-label="عرض المشروع" aria-hidden="true">
+        <div class="project__top">
+            <button class="project__back" id="projectBack" type="button">
+                <span class="project__back-arrow" aria-hidden="true">→</span>
+                <span class="project__back-txt">رجوع</span>
+            </button>
+            <div class="project__meta">
+                <span class="project__title" id="projectTitle"></span>
+                <span class="project__counter" id="projectCounter"></span>
+            </div>
+            <button class="project__close" id="projectClose" type="button" aria-label="إغلاق">إغلاق</button>
+        </div>
+        <div class="project__body" id="projectBody"></div>
+        <div class="project__progress" id="projectProgress" aria-hidden="true"></div>
+    </div>
 
     <!-- ===== Scripts (deferred, non-blocking) ===== -->
+    <script src="assets/js/vendor/lenis.min.js" defer></script>
+    <script src="assets/js/portfolio-data.js" defer></script>
     <script src="assets/js/main.js" defer></script>
 </body>
 </html>
