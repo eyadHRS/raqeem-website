@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://raqeem-agency.workers.dev/sitemap.xml
+Sitemap: https://raqeem-website.pages.dev/sitemap.xml
